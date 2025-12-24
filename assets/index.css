@@ -61,7 +61,7 @@ html,body{
 }
 
 /* =========================
-   🎯 핵심 수정 구간
+   🎯 글자 / 폰트 강제 적용
    ========================= */
 .birthday-letter,
 .birthday-letter *{
@@ -195,6 +195,42 @@ html,body{
 }
 
 .letter-container.show{opacity:1;transform:scale(1)}
+
+/* =========================
+   📸 추억 사진 갤러리 (핵심 추가)
+   ========================= */
+.photo-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  margin-top:30px;
+}
+
+.photo-item{
+  width:100%;
+  overflow:hidden;
+  border-radius:10px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+
+.photo-item img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+}
+
+/* 모바일 대응 */
+@media (max-width:767px){
+  .photo-gallery{
+    grid-template-columns:1fr;
+  }
+
+  .photo-item img{
+    height:160px;
+  }
+}
+/* ========================= */
 
 @keyframes float{
   0%,to{transform:translateY(0)}
