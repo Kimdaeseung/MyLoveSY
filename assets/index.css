@@ -220,6 +220,17 @@ html,body{
   display:block;
 }
 
+.music-hint{
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.6);
+  z-index: 3000;
+
+  pointer-events: none;
+}
+
 /* 모바일 대응 */
 @media (max-width:767px){
   .photo-gallery{
