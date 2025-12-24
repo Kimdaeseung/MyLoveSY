@@ -2,7 +2,10 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/heart.svg" />
+
+    <!-- ❌ /heart.svg → ⭕ ./heart.svg -->
+    <link rel="icon" type="image/svg+xml" href="./heart.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="수연아 생일 축하해 - 바봉이의 특별한 생일 선물" />
     
@@ -11,6 +14,8 @@
     <meta property="og:title" content="수연아 생일 축하해 - 바봉이" />
     <meta property="og:description" content="수연아 생일 축하해 - 바봉이의 특별한 생일 선물" />
     <meta property="og:type" content="website" />
+
+    <!-- og:url / og:image 는 절대경로 유지 (미리보기용이라 OK) -->
     <meta property="og:url" content="https://devilchuk.dothome.co.kr" />
     <meta property="og:image" content="https://devilchuk.dothome.co.kr/heart.svg" />
     
@@ -21,13 +26,18 @@
     <meta name="twitter:image" content="https://devilchuk.dothome.co.kr/heart.svg" />
     
     <title>수연아 생일 축하해 - 바봉이</title>
+
+    <!-- 구글 폰트 (절대 URL → 그대로 OK) -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-Cp139oqQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index.css">
+
+    <!-- ❌ /assets/... → ⭕ ./assets/... -->
+    <script type="module" crossorigin src="./assets/index-Cp139oqQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
   </head>
+
   <body>
     <div id="root"></div>
   </body>
